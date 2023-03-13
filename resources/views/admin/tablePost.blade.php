@@ -17,7 +17,7 @@
                                 <th scope="col">Title</th>
                                 <th scope="col">Post</th>
                                 <th scope="col">User_ID</th>
-                                <th scope="col">Action</th>
+                                <th scope="col" style="text-align: center;">Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -27,7 +27,8 @@
                                 <td>{{$post->title}}</td>
                                 <td>{{$post->post}}</td>
                                 <td>{{$post->user_id}}</td>
-                                <td><a href="{{route('admindeleteUser', $post->id)}}">Delete</a></td>
+                                <td style="text-align:center"><a href="{{route('admindeletePostAdmin', $post->id)}}"><i
+                                            class="fa-regular fa-trash-can"></i></a></td>
                             </tr>
                             @endforeach
                         </tbody>

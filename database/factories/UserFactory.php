@@ -40,7 +40,7 @@ class UserFactory extends Factory
             'email' => $this->faker->unique()->safeEmail(),
             'gender' => $this->faker->randomElement(['Male', 'Female', 'Other']),
             'age' => $this->faker->numberBetween(18, 90),
-            'country' => $this->faker->randomElement(['Nepal', 'India', 'China', 'USA', 'UK', 'Austrailia']),
+            'country' => $this->faker->randomElement(['Nepal', 'India', 'China', 'England', 'France', 'USA', 'UK', 'Austrailia','Japan', 'Belgium', 'Brazil']),
             'password' => Hash::make('12345678'),
             'img' =>$randomimg[rand(0,13)],
 

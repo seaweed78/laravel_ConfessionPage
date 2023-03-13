@@ -16,8 +16,7 @@
                                 <th scope="col">ID</th>
                                 <th scope="col">Name</th>
                                 <th scope="col">Email</th>
-                                <th scope="col">Action</th>
-                                <th scope="col">Action</th>
+                                <th scope="col" style="text-align: center;">Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -26,8 +25,10 @@
                                 <td>{{$user->id}}</td>
                                 <td>{{$user->name}}</td>
                                 <td>{{$user->email}}</td>
-                                <td><a href="{{route('admineditUser', $user->id)}}">Edit</a></td>
-                                <td><a href="{{route('admindeleteUser', $user->id)}}">Delete</a>
+                                <td style="text-align: center;"><a href=" {{route('admineditUser', $user->id)}}"><i
+                                            class="fa-regular fa-pen-to-square"></i></a> | <a
+                                        href="{{route('admindeleteUser', $user->id)}}"><i
+                                            class="fa-regular fa-trash-can"></i></a>
                                 </td>
                             </tr>
                             @endforeach

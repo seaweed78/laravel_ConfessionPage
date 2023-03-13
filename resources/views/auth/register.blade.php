@@ -72,12 +72,16 @@
                             <div class="mb-3">
                                 <label for="Country" class="form-label">Select Country</label>
                                 <select name="country">
-                                    <option value="Nepal">Nepal</option>
-                                    <option value="India">India</option>
+                                    <option value="Australia">Australia</option>
+                                    <option value="Belgium">Belgium</option>
+                                    <option value="Brazil">Brazil</option>
                                     <option value="China">China</option>
+                                    <option value="England">England</option>
+                                    <option value="France">France</option>
+                                    <option value="India">India</option>
+                                    <option value="Nepal">Nepal</option>
                                     <option value="USA">USA</option>
                                     <option value="UK">UK</option>
-                                    <option value="Australia">Australia</option>
                                 </select>
                             </div>
                             <div class="mb-3 p-0">

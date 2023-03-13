@@ -187,8 +187,7 @@ function drawBarChart() {
                         <th scope="col">ID</th>
                         <th scope="col">Name</th>
                         <th scope="col">Email</th>
-                        <th scope="col">Action</th>
-                        <th scope="col">Action</th>
+                        <th scope="col" style="text-align:center;">Action</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -197,8 +196,7 @@ function drawBarChart() {
                         <td>{{$user->id}}</td>
                         <td>{{$user->name}}</td>
                         <td>{{$user->email}}</td>
-                        <td>#</td>
-                        <td>#</td>
+                        <td style="text-align: center;">#</td>
                     </tr>
                     @endforeach
                 </tbody>
@@ -216,7 +214,6 @@ function drawBarChart() {
                         <th scope="col">Name</th>
                         <th scope="col">Email</th>
                         <th scope="col">Action</th>
-                        <th scope="col">Action</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -225,8 +222,11 @@ function drawBarChart() {
                         <td>{{$user->id}}</td>
                         <td>{{$user->name}}</td>
                         <td>{{$user->email}}</td>
-                        <td><a href="{{route('admineditUser', $user->id)}}">Edit</a></td>
-                        <td><a href="{{route('admindeleteUser', $user->id)}}">Delete</a>
+                        <td><a href=" {{route('admineditUser', $user->id)}}"><i
+                                    class="fa-regular fa-pen-to-square"></i></a> | <a
+                                href="{{route('admindeleteUser', $user->id)}}"><i
+                                    class="fa-regular fa-trash-can"></i></a>
+                        </td>
                         </td>
                     </tr>
                     @endforeach
@@ -245,8 +245,8 @@ function drawBarChart() {
                         <th scope="col">ID</th>
                         <th scope="col">Title</th>
                         <th scope="col">Post</th>
-                        <th scope="col">User_ID</th>
-                        <th scope="col">Action</th>
+                        <th scope="col" style="text-align: center;">User_ID</th>
+                        <th scope="col" style="text-align: center;">Action</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -255,8 +255,9 @@ function drawBarChart() {
                         <td>{{$post->id}}</td>
                         <td>{{$post->title}}</td>
                         <td>{{$post->post}}</td>
-                        <td>{{$post->user_id}}</td>
-                        <td><a href="{{route('admindeleteUser', $post->id)}}">Delete</a></td>
+                        <td style="text-align:center;">{{$post->user_id}}</td>
+                        <td style="text-align:center"><a href="{{route('admindeletePostAdmin', $post->id)}}"><i
+                                    class="fa-regular fa-trash-can"></i></a></td>
                     </tr>
                     @endforeach
                 </tbody>
@@ -415,9 +416,9 @@ function drawBarChart() {
                                 </div>
                             </div>
                             <ul class="list-group list-group-flush mt-4">
-                                <li class="subject list-group-item fs-5 mt-4">SUBJECT: </li>
-                                <li class="messagee list-group-item fs-5 mt-4">MESSAGE: </li>
-                                <li class="sentAt list-group-item fs-5 mt-4">SENT AT: </li>
+                                <li class="subject list-group-item fs-5 mt-4">Subject: </li>
+                                <li class="messagee list-group-item fs-5 mt-4">Message: </li>
+                                <li class="sentAt list-group-item fs-5 mt-4">Sent At: </li>
                             </ul>
 
                         </section>
